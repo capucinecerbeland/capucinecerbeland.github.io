@@ -2,7 +2,39 @@ body{
     background:ivory;
     color:rgb(51, 61, 95);
     font-family: 'Courier New', Courier, monospace;
-    p{text-align: left;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+p{text-align: left;
+    
     }
-    h1{text-align: center;}
+
+h1{
+    text-align: center;}
+
+span{
+    text-align: left;
+    color: rgb(184, 171, 52);
+}
+
+p span{
+    color: rgb(138, 0, 0);
+}
+
+.alert{
+    color: brown;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
 }

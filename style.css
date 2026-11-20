@@ -14,21 +14,25 @@ p{text-align: left;
 
 h1{
     font-family: "Archivo", sans-serif;
-    font-size: 200px;
+    font-size: 150px;
     color: #e3dc93;
     text-align: left;
     font-weight:400;
+    display: inline-block;
+}
+.cerbeland{
     position: relative;
 }
-h1::after{
+
+.cerbeland::after{
     content: "Portfolio";
     font-family: "Cutive Mono", monospace;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 20;
     color:rgb(51, 61, 95);
     position: absolute;
-    top:75%;
-    right:10%;
+    top: 75px;
+    right: -95px;
 
 }
 

@@ -1,15 +1,14 @@
 body{
     background:rgb(255, 255, 255);
-    color:rgb(51, 61, 95);
+    color:#231f20;
     max-width: 1920px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 15px;
 }
 
 p{text-align: left;
     font-family: "Cutive Mono", monospace;
     font-size: 12px;
-    
     }
 
 h1{
@@ -19,19 +18,21 @@ h1{
     text-align: left;
     font-weight:400;
     display: inline-block;
+    text-indent: -30px;
 }
 .cerbeland{
     position: relative;
+    text-indent: -30px;
 }
 
 .cerbeland::after{
-    content: "Portfolio";
+    content: "Capucine Cerbeland";
     font-family: "Cutive Mono", monospace;
-    font-size: 35px;
-    font-weight: 20;
+    font-size: 22px;
+    font-weight: 10;
     color:rgb(51, 61, 95);
     position: absolute;
-    top: 75px;
+    top: 85px;
     right: -95px;
 
 }
@@ -73,6 +74,6 @@ header {
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }

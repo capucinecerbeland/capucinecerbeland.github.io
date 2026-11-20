@@ -7,16 +7,34 @@ body{
     padding: 8px;
 }
 
+@font-face {
+    font-family:"Archivo" ;
+    src: url(Fonts/Archivo/Archivo-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family:"Cutive Mono";
+    src: url(Fonts/Cutive_Mono/);
+}
 p{text-align: left;
+    font-family: "Cutive Mono", monospace;
+    font-size: 15px;
     
     }
 
 h1{
+    font-family: "Archivo", sans-serif;
+    font-size: 150px;
+    color: #e3dc93;
     text-align: center;}
+
+h2{
+    font-family: "Cutive Mono", monospace;
+    font: size 20px;;
+}
 
 span{
     text-align: left;
-    color: rgb(184, 171, 52);
 }
 
 p span{

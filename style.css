@@ -1,11 +1,43 @@
 body{
-    background:ivory;
+    background:rgb(255, 255, 255);
     color:rgb(51, 61, 95);
-    font-family: 'Courier New', Courier, monospace;
-    max-width: 1200px;
+    max-width: 1920px;
     margin: 0 auto;
-    padding: 8px;
+    padding: 10px;
 }
+
+p{text-align: left;
+    font-family: "Cutive Mono", monospace;
+    font-size: 12px;
+    
+    }
+
+h1{
+    font-family: "Archivo", sans-serif;
+    font-size: 200px;
+    color: #e3dc93;
+    text-align: left;
+    font-weight:400;
+    position: relative;
+}
+h1::after{
+    content: "Portfolio";
+    font-family: "Cutive Mono", monospace;
+    font-size: 50px;
+    font-weight: 20;
+    color:rgb(51, 61, 95);
+    position: absolute;
+    top:75%;
+    right:10%;
+
+}
+
+h2{
+    font-family: "Cutive Mono", monospace;
+    font-weight: lighter;
+    font-size:  30px;
+}
+
 
 @font-face {
     font-family:"Archivo" ;
@@ -16,33 +48,17 @@ body{
     font-family:"Cutive Mono";
     src: url(Fonts/Cutive_Mono/);
 }
-p{text-align: left;
-    font-family: "Cutive Mono", monospace;
-    font-size: 15px;
-    
-    }
-
-h1{
-    font-family: "Archivo", sans-serif;
-    font-size: 150px;
-    color: #e3dc93;
-    text-align: center;}
-
-h2{
-    font-family: "Cutive Mono", monospace;
-    font: size 20px;;
-}
-
-span{
-    text-align: left;
-}
-
-p span{
-    color: rgb(138, 0, 0);
-}
 
 .alert{
-    color: brown;
+    text-align:left;
+    font-family: "Cutive Mono", monospace;
+    font-size: 10px;
+}
+
+img{
+    width: 100%;
+    height:auto;
+    display: block;
 }
 
 header {
@@ -54,5 +70,5 @@ header {
 .grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    gap: 10px;
 }

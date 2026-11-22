@@ -1,78 +1,145 @@
-body{
-    background:rgb(255, 255, 255);
-    color:#231f20;
-    max-width: 1920px;
-    margin: 0 auto;
-    padding: 15px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-p{text-align: left;
-    font-family: "Cutive Mono", monospace;
-    font-size: 12px;
-    }
-
-h1{
-    font-family: "Archivo", sans-serif;
-    font-size: 150px;
-    color: #e3dc93;
-    text-align: left;
-    font-weight:400;
-    display: inline-block;
-    text-indent: -30px;
-}
-.cerbeland{
-    position: relative;
-}
-
-.cerbeland::after{
-    content: "Capucine Cerbeland";
-    font-family: "Cutive Mono", monospace;
-    font-size: 22px;
-    font-weight: 10;
-    color:rgb(51, 61, 95);
-    position: absolute;
-    top: 85px;
-    right: -95px;
-
-}
-
-h2{
-    font-family: "Cutive Mono", monospace;
-    font-weight: lighter;
-    font-size:  30px;
-}
-
-
-@font-face {
-    font-family:"Archivo" ;
-    src: url(Fonts/Archivo/Archivo-VariableFont_wdth\,wght.ttf);
-}
-
-@font-face {
-    font-family:"Cutive Mono";
-    src: url(Fonts/Cutive_Mono/);
-}
-
-.alert{
-    text-align:left;
-    font-family: "Cutive Mono", monospace;
-    font-size: 10px;
-}
-
-img{
-    width: 100%;
-    height:auto;
-    display: block;
+body {
+    background-color: #d2e2fa;
+    color: #111;
+    font-family: "Cutive_Mono", monospace;
+    font-size: smaller;
 }
 
 header {
     display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
+    grid-template-columns: 70px 1fr 1fr 70px;
+    border-bottom: 1px solid black;
+    min-height: 70px;
 }
 
-.grid{
+.logo, .header-title, .header-description, .menu {
+    padding: 20px;
+    border-right: 1px solid black;
+}
+
+.logo {
+    font-size: 30px;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 28px;
+}
+
+.header-description {
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.menu {
+    writing-mode: vertical-rl;
+    text-align: center;
+    font-size: 18px;
+}
+
+.section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid black;
+}
+
+.section h2 {
+    padding: 20px;
+    font-size: 28px;
+    font-weight: normal;
+    border-right: 1px solid black;
+}
+
+.description {
+    padding: 20px;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.initiative {
+    border-bottom: 1px solid black;
+}
+
+.initiative-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 20px;
+    cursor: pointer;
+    font-size: 55px;
+}
+
+.plus {
+    font-size: 50px;
+}
+
+.content {
+    display: none;
+    padding: 20px;
+}
+
+.content.open {
+    display: block;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.content p {
+    font-family: monospace;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+.content a {
+    color: black;
+}
+
+.content img {
+    width: 80%;
+    margin-top: 40px;
+}
+
+.speakers {
+    font-family: monospace;
+}
+
+.speakers small {
+    font-size: 12px;
+}
+
+@media (max-width: 700px) {
+    header {
+        grid-template-columns: 50px 1fr 50px;
+    }
+
+    .header-description {
+        display: none;
+    }
+
+    .initiative-title {
+        font-size: 35px;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        grid-template-columns: 1fr;
+    }
+
+    .content img {
+        width: 100%;
+    }
 }

@@ -1,47 +1,89 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
     <header>
-        <h1>Portfolio
-            <span class="cerbeland"></span></h1>
+        <div class="logo">CC</div>
+        <div class="header-title">Capucine Cerbeland
+        </div>
+        <div class="header-description">
+            Étudiante en L2 de Design graphique, image de communication. Actuellement en recherche de stage.
+        </div>
+        <div class="menu">＋ Contact</div>
     </header>
 
     <main>
-        <div class="grid">
-             <a href="Amisum.html">
-                <img src="images/Images-portfolio/amisum.png" alt="Amisum">
-            </a>
-            
-            <a href="Cyanotype.html">
-                <img src="images/Images-portfolio/cyanotype.png" alt="Cyanotype">
-            </a>
 
-            <a href="Photographie.html">
-                <img src="images/Images-portfolio/photo1.png" alt="Photographie">
-            </a>
-            
-            <a href="Gangsters.html">
-                <img src="images/Images-portfolio/gangster.png" alt="Gangsters">
-            </a>
-            
-             <a href="Typographie.html">
-                <img src="images/Images-portfolio/typo.png" alt="Typographie">
-            </a>
+        <section class="section">
+            <h2>Portfolio</h2>
+            <p class="description">
+            </p>
+        </section>
 
-            <a href="Kabane-cafe.html">
-                <img src="images/Images-portfolio/tablier.png" alt="Kabane Café">
-            </a>
+        <section class="initiative">
+            <div class="initiative-title" onclick="toggleSection(this)">
+                <span>Herbier</span>
+                <span class="plus">＋</span>
+            </div>
 
-        </div>
+            <div class="content">
+                <p>
+                    - Projet personnel - <br>
+                    2025
+                </p>
+                <p>
+                    Texte explicatif du projet
+                </p>
+                <img src="image.jpg" alt="Photo">
+            </div>
+        </section>
+
+        <section class="initiative">
+            <div class="initiative-title" onclick="toggleSection(this)">
+                <span>Amisum</span>
+                <span class="plus">＋</span>
+            </div>
+
+            <div class="content">
+                <div class="content-grid">
+                    <div>
+                        <p>
+                           - Projet de classe -  <br>
+                           2026
+                        </p>
+
+                        <p>
+                          Texte explicatif du projet
+                        </p>
+                         <img src="image.jpg" alt="photo">
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
-</body>
 
+    <script>
+        function toggleSection(element) {
+            const content = element.nextElementSibling;
+            const symbol = element.querySelector(".plus");
+
+            content.classList.toggle("open");
+
+            if (content.classList.contains("open")) {
+                symbol.textContent = "×";
+            } else {
+                symbol.textContent = "＋";
+            }
+        }
+    </script>
+
+</body>
 </html>

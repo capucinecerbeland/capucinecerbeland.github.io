@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #d2e2fa;
+    background-color: #e4e1b9;
     color: #111;
     font-family: "Cutive_Mono", monospace;
     font-size: smaller;
@@ -21,15 +21,16 @@ header {
 .logo, .header-title, .header-description, .menu {
     padding: 20px;
     border-right: 1px solid black;
+   text-align: justify;
 }
 
 .logo {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
 }
 
 .header-title {
-    font-size: 28px;
+    font-size: 25px;
 }
 
 .header-description {
@@ -116,6 +117,17 @@ header {
 
 .speakers small {
     font-size: 12px;
+}
+
+.info {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  transition: 0.2s;
+}
+
+.info:hover {
+  filter: invert(1);
 }
 
 @media (max-width: 700px) {

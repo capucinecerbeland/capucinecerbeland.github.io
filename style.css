@@ -22,7 +22,6 @@ h1{
 }
 .cerbeland{
     position: relative;
-    text-indent: -30px;
 }
 
 .cerbeland::after{
